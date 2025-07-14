@@ -27,18 +27,18 @@ const Home = () => {
             </div>
 
             <div className=" w-full h-auto  relative top-[50px] flex flex-wrap px-[90px] items-center justify-center gap-[10px]">
-              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
+              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px] ">
                 <img className="w-[40px] h-[40px]" src={i1} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Development
                 </h1>
                 <p className="text-center">
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
+              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px] ">
                 <img className="w-[40px] h-[40px]" src={i2} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   UI/UX Designer
                 </h1>
                 <p className="text-center">
@@ -46,9 +46,9 @@ const Home = () => {
                   quality
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
                 <img className="w-[40px] h-[40px]" src={i3} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Photography
                 </h1>
                 <p className="text-center">
@@ -56,27 +56,27 @@ const Home = () => {
                   quality
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
                 <img className="w-[40px] h-[40px]" src={i4} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Videography
                 </h1>
                 <p className="text-center">
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
                 <img className="w-[40px] h-[40px]" src={i5} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Motion Graphik
                 </h1>
                 <p className="text-center">
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
                 <img className="w-[40px] h-[40px]" src={i6} alt="" />
-                <h1 style={{ fontFamily: "devil breez" }} className="text">
+                <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Graphik Designer
                 </h1>
                 <p className="text-center">
@@ -135,36 +135,6 @@ const Home = () => {
               world. One network. One powerful voice for your brand — let’s
               build your digital communication strategy together!"
             </p>
-          </div>
-        </div>
-
-        <div className="" id="">
-          <div className="">
-            <div className="">03</div>
-            <div className="">
-              <div className="">CONTACT</div>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Email</td>
-                    <td>martspelltech@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <td>Phone</td>
-                    <td>979645451</td>
-                  </tr>
-                  <tr>
-                    <td>Website</td>
-                    <td>martspwll.com</td>
-                  </tr>
-                  <tr>
-                    <td>Youtube</td>
-                    <td>@martspell</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div className="">mart</div>
-            </div>
           </div>
         </div>
       </div>

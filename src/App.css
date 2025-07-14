@@ -29,6 +29,3 @@ body{
 body,html{
   overflow-x: hidden;
 }
-.content-fit::before{
-  content: attr(data-before);
-}
