@@ -101,66 +101,43 @@ const Home = () => {
             />
           </div>
         </div>
+
         <div
-          className="w-full sm:w-full lg:w-full lg:px-[50px] sm:px-0 border"
+          style={{ fontFamily: "devil breeze" }}
+          className="flex flex-col px-[20px] sm:px-[80px] text-left sm:text-center w-full"
+        >
+          <div className="text-9xl text-center sm:text-left">01</div>
+          <div className="w-full sm:w-[600px] text-left sm:text-center text-5xl sm:text-[60px] ">
+            <div className=" text-center sm:text-left">
+              MART SPELL TECH Where truly great things can happen
+            </div>
+          </div>
+        </div>
+
+        <div
+          className=" sm:px-[50px] px-[20px] w-full  flex sm:justify-end justify-center"
           id=""
         >
-          <div style={{ fontFamily: "devil breeze" }} className="flex flex-col">
-            <div className="text-9xl text-center sm:text-left">01</div>
-            <div className="w-full sm:w-[600px] text-left sm:text-center text-5xl sm:text-[60px] ">
-              <div className="border">
-                MART SPELL TECH Where truly great things can happen
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" px-[50px]" id="">
           <div
             style={{ fontFamily: "devil breeze" }}
-            className="flex flex-row-reverse"
+            className="flex flex-col w-[600px]"
           >
-            <div className="text-9xl">02</div>
-            <div className="w-[600px]">
-              <div className="text-7xl">
-                Beautiful story that make your brand unique
-              </div>
-              <p>
-                "Everything is connected. Your digital communication should be
-                too. Let’s unify your message and boost your impact!" "In
-                today’s networked world, scattered messages don’t work. I create
-                cohesive, powerful digital communication that cuts through the
-                noise." "One world. One network. One powerful voice for your
-                brand — let’s build your digital communication strategy
-                together!"
-              </p>
+            <div className="text-9xl text-center sm:text-right">02</div>
+
+            <div className=" text-4xl w-full sm:w-[600px] sm:text-7xl min-h-[90px] text-center p-6 sm:text-right  ">
+              Beautiful story that make your brand unique
             </div>
+            <p>
+              "Everything is connected. Your digital communication should be
+              too. Let’s unify your message and boost your impact!" "In today’s
+              networked world, scattered messages don’t work. I create cohesive,
+              powerful digital communication that cuts through the noise." "One
+              world. One network. One powerful voice for your brand — let’s
+              build your digital communication strategy together!"
+            </p>
           </div>
         </div>
-        <div className="" id="">
-          <div className="">
-            <div className="">02</div>
-            <div className="">
-              <div className="">
-                Beautiful story that make your brand unique
-              </div>
-              <p>
-                "Everything is connected. Your digital communication should be
-                too. Let’s unify your message and boost your impact!" "In
-                today’s networked world, scattered messages don’t work. I create
-                cohesive, powerful digital communication that cuts through the
-                noise." "One world. One network. One powerful voice for your
-                brand — let’s build your digital communication strategy
-                together!"
-              </p>
-            </div>
-          </div>
-          <img
-            src=""
-            className=""
-            alt
-            style={{ width: "70vw", bottom: 0, right: 0, zIndex: 101 }}
-          />
-        </div>
+
         <div className="" id="">
           <div className="">
             <div className="">03</div>
