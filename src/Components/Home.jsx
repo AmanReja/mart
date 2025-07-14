@@ -101,36 +101,36 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className=" px-[50px]" id="">
-          <div style={{ fontFamily: "devil breeze" }} className="">
-            <div className="text-9xl">01</div>
-            <div className="w-[600px]">
-              <div className="text-7xl">
-                MART SPELL TECH Where truly great things can happen
-              </div>
-            </div>
+
+        <div
+          style={{ fontFamily: "devil breeze" }}
+          className="flex flex-col border w-full lpx-[80px] lg:text-left sm:text-center sm:px-0"
+        >
+          <div className=" text-9xl lg:text-left sm:text-center ">01</div>
+
+          <div className="text-7xl w-[600px]">
+            MART SPELL TECH Where truly great things can happen
           </div>
         </div>
-        <div className=" px-[50px]" id="">
+
+        <div className=" px-[50px] border" id="">
           <div
             style={{ fontFamily: "devil breeze" }}
             className="flex flex-row-reverse"
           >
             <div className="text-9xl">02</div>
-            <div className="w-[600px]">
-              <div className="text-7xl">
-                Beautiful story that make your brand unique
-              </div>
-              <p>
-                "Everything is connected. Your digital communication should be
-                too. Let’s unify your message and boost your impact!" "In
-                today’s networked world, scattered messages don’t work. I create
-                cohesive, powerful digital communication that cuts through the
-                noise." "One world. One network. One powerful voice for your
-                brand — let’s build your digital communication strategy
-                together!"
-              </p>
+
+            <div className="text-7xl">
+              Beautiful story that make your brand unique
             </div>
+            <p>
+              "Everything is connected. Your digital communication should be
+              too. Let’s unify your message and boost your impact!" "In today’s
+              networked world, scattered messages don’t work. I create cohesive,
+              powerful digital communication that cuts through the noise." "One
+              world. One network. One powerful voice for your brand — let’s
+              build your digital communication strategy together!"
+            </p>
           </div>
         </div>
         <div className="" id="">
