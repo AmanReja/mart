@@ -1,5 +1,8 @@
 body{
-  background:linear-gradient(to right,#000,rgb(131, 230, 11));
+   background-image:repeating-linear-gradient(
+        to right, transparent 0 500px, #73814B33 500px 501px
+    );
+    background-size: 100%;
 }
 @keyframes bloom {
   0% {

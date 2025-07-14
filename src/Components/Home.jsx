@@ -1,6 +1,7 @@
 import React from "react";
 import "../Banner.css";
 import lap from "../assets/Images/ring.png";
+import im2 from "../assets/Images/Img.png";
 
 import im3 from "../assets/Images/pat.png";
 import i1 from "../assets/icons/Icon1.png";
@@ -91,12 +92,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <img
+          <img
             src={im2}
-            className="decorate"
+            className="decorate z-0"
             alt
-            style={{ width: "30vw", bottom: 0, right: 0 }}
-          /> */}
+            style={{ width: "30vw", bottom: -100, right: 0 }}
+          />
           <img
             src={im3}
             className="decorate "

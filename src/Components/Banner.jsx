@@ -10,9 +10,9 @@ const Banner = () => {
         // style={{
         //   backgroundImage: `linear-gradient(90deg, rgba(131, 58, 180, 0.2) 0%, rgba(253, 29, 29, 0.2) 0%, rgba(252, 176, 69, ) 100%);`,
         // }}
-        className="flex w-full h-[631px ]  bg-no-repeat bg-cover justify-center items-center  "
+        className="flex w-full h-[631px ] sm:flex-col lg:flex-row md:flex-col  bg-no-repeat bg-cover justify-center items-center  "
       >
-        <div className="flex w-[619px] h-[504px]  flex-col gap-[60px] justify-center ">
+        <div className="flex lg:w-[619px] lg:h-[504px] sm:w-full sm:h-full border  flex-col gap-[60px] justify-center ">
           <div className="absolute w-[120px] h-[120px] bg-orange-400 blur-[50px] rounded-full ball"></div>
           <h1
             style={{ fontFamily: "Montserrat", fontWeight: 500 }}
@@ -33,15 +33,15 @@ const Banner = () => {
             performance?
           </p>
         </div>
-        <div className="flex w-[619px] h-full  ">
+        <div className="flex lg:w-[619px] lg:h-full sm:w-full sm:h-full ">
           <img src={im1} alt="" />
         </div>
       </div>
       <section
         style={{ fontFamily: "Montserrat" }}
-        className="w-full h-[550px]  flex justify-evenly items-center "
+        className="w-full h-[550px] lg:flex-row sm:flex-col  flex justify-evenly items-center "
       >
-        <div className="flex w-[619px]  h-[506px] flex-col gap-[50px]  ">
+        <div className="flex lg:w-[619px]  lg:h-[506px] sm:w-full sm:h-full flex-col gap-[50px]">
           <p className="text-[18px] text-white font-bold relative top-[30px]">
             Why We are Different?
           </p>
@@ -73,17 +73,12 @@ const Banner = () => {
             <div className="ball w-[620px] h-[520px] rounded-full bg-violet-400 absolute blur-[200px]"></div>
           </div>
         </div>
-        <div className="flex w-[515px]  h-[506px]">
-          <img src={Bn} alt="" />
+        <div className="flex lg:w-[515px]  lg:h-[506px] sm:w-full sm:h-full">
+          <img className="object-cover w-full h-full" src={Bn} alt="" />
         </div>
       </section>
-      {/* 
-      <section
-        style={{ backgroundImage: `url(${Shap.src})` }}
-        className=" w-full h-[471px] bg-no-repeat bg-center bg-contain p-[20px]"
-      >
-        <Image src={Shap}></Image>
-      </section> */}
+
+      <section className=" w-full h-[471px] bg-no-repeat bg-center bg-contain p-[20px]"></section>
     </>
   );
 };

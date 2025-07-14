@@ -14,12 +14,10 @@ body {
     color: #eef8ce;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    background-image:
-
-    repeating-linear-gradient(
+    /* background-image:repeating-linear-gradient(
         to right, transparent 0 500px, #73814B33 500px 501px
     );
-    background-size: 100%;
+    background-size: 100%; */
 }
 *::-webkit-scrollbar {
     width: 0;
@@ -154,7 +152,7 @@ header .content-fit nav ul{
     z-index: 100;
     pointer-events: none;
 }
-@media screen and (max-width: 1023px){
+/* @media screen and (max-width: 1023px){
     #banner .title {
         font-size: 5em;
     }
@@ -187,4 +185,4 @@ header .content-fit nav ul{
     #container3D {
         position: absolute;
     }
-}
+} */
