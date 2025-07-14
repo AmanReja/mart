@@ -3,12 +3,12 @@ import "../Banner.css";
 import lap from "../assets/Images/ring.png";
 
 import im3 from "../assets/Images/pat.png";
-import i1 from "../assets/icons/icon1.png";
-import i2 from "../assets/icons/icon7.png";
-import i3 from "../assets/icons/icon3.png";
-import i4 from "../assets/icons/icon2.png";
-import i5 from "../assets/icons/icon5.png";
-import i6 from "../assets/icons/icon6.png";
+import i1 from "../assets/icons/Icon1.png";
+import i2 from "../assets/icons/Icon7.png";
+import i3 from "../assets/icons/Icon3.png";
+import i4 from "../assets/icons/Icon2.png";
+import i5 from "../assets/icons/Icon5.png";
+import i6 from "../assets/icons/Icon6.png";
 // import i1 from "../assets/icons/icon1.png";
 
 const Home = () => {
