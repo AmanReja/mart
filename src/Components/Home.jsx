@@ -1,7 +1,7 @@
 import React from "react";
 import "../Banner.css";
 import lap from "../assets/Images/ring.png";
-import im2 from "../assets/Images/img.png";
+
 import im3 from "../assets/Images/pat.png";
 import i1 from "../assets/icons/icon1.png";
 import i2 from "../assets/icons/icon7.png";
