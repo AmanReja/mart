@@ -15,14 +15,19 @@ import i6 from "../assets/icons/Icon6.png";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="w-full h-auto">
         <div className="" id="">
-          <div className="content-fit ">
-            <div className="title" data-before="Provide For You">
+          <div>
+            <div
+              style={{ fontFamily: "devil breeze " }}
+              className="text-center text-lime-400 text-5xl font-bold px-[5px]  w-full "
+            >
               The Service We
+              <div>provide for you</div>
             </div>
-            <div className=" w-full h-[500px] relative top-[50px] flex flex-wrap px-[90px] items-center justify-center gap-[10px]">
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
+
+            <div className=" w-full h-auto  relative top-[50px] flex flex-wrap px-[90px] items-center justify-center gap-[10px]">
+              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
                 <img className="w-[40px] h-[40px]" src={i1} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   Development
@@ -31,7 +36,7 @@ const Home = () => {
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
+              <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl ">
                 <img className="w-[40px] h-[40px]" src={i2} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   UI/UX Designer
@@ -41,7 +46,7 @@ const Home = () => {
                   quality
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
                 <img className="w-[40px] h-[40px]" src={i3} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   Photography
@@ -51,7 +56,7 @@ const Home = () => {
                   quality
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
                 <img className="w-[40px] h-[40px]" src={i4} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   Videography
@@ -60,7 +65,7 @@ const Home = () => {
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
                 <img className="w-[40px] h-[40px]" src={i5} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   Motion Graphik
@@ -69,7 +74,7 @@ const Home = () => {
                   Create a platform with the best and coolest quality from us.
                 </p>
               </div>
-              <div className="flex w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
+              <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl">
                 <img className="w-[40px] h-[40px]" src={i6} alt="" />
                 <h1 style={{ fontFamily: "devil breez" }} className="text">
                   Graphik Designer
@@ -80,27 +85,51 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <img
-            src={im2}
-            className=""
-            alt
-            style={{ width: "30vw", bottom: -100, right: 0 }}
-          />
-          <img
-            src={im3}
-            className="decorate "
-            alt
-            style={{ width: "20vw", bottom: 0, left: 0 }}
-          />
+          <div className="flex w-full justify-between">
+            {" "}
+            <img
+              src={im2}
+              className=""
+              alt
+              style={{ width: "30vw", bottom: -100, right: 0 }}
+            />
+            <img
+              src={im3}
+              className="decorate "
+              alt
+              style={{ width: "20vw", bottom: 0, left: 0 }}
+            />
+          </div>
         </div>
-        <div className="" id="">
-          <div className="">
-            <div className="">01</div>
-            <div className="">
-              <div className="">
+        <div className=" px-[50px]" id="">
+          <div style={{ fontFamily: "devil breeze" }} className="">
+            <div className="text-9xl">01</div>
+            <div className="w-[600px]">
+              <div className="text-7xl">
                 MART SPELL TECH Where truly great things can happen
               </div>
-              <p></p>
+            </div>
+          </div>
+        </div>
+        <div className=" px-[50px]" id="">
+          <div
+            style={{ fontFamily: "devil breeze" }}
+            className="flex flex-row-reverse"
+          >
+            <div className="text-9xl">02</div>
+            <div className="w-[600px]">
+              <div className="text-7xl">
+                Beautiful story that make your brand unique
+              </div>
+              <p>
+                "Everything is connected. Your digital communication should be
+                too. Let’s unify your message and boost your impact!" "In
+                today’s networked world, scattered messages don’t work. I create
+                cohesive, powerful digital communication that cuts through the
+                noise." "One world. One network. One powerful voice for your
+                brand — let’s build your digital communication strategy
+                together!"
+              </p>
             </div>
           </div>
         </div>
