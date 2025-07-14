@@ -1,0 +1,18 @@
+body{
+  background:linear-gradient(to right,#000,rgb(131, 230, 11));
+}
+@keyframes bloom {
+  0% {
+    transform: translateX(120px) scale(1);
+  }
+  50% {
+    transform: translateX(-120px) scale(1.2);
+  }
+  100% {
+    transform: translateX(120px) scale(1);
+  }
+}
+
+.ball {
+  animation: bloom 5s infinite ease-in-out;
+}
