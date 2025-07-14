@@ -16,19 +16,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <header>
-          <div className="content-fit">
-            <div className="logo">Mart spell Tech</div>
-            <nav>
-              <ul>
-                <li>Contacts</li>
-                <li>Category</li>
-                <li>Login</li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <div className="section" id="banner">
+        <div className="" id="">
           <div className="content-fit ">
             <div className="title" data-before="Provide For You">
               The Service We
@@ -94,7 +82,7 @@ const Home = () => {
           </div>
           <img
             src={im2}
-            className="decorate z-0"
+            className=""
             alt
             style={{ width: "30vw", bottom: -100, right: 0 }}
           />
@@ -105,22 +93,22 @@ const Home = () => {
             style={{ width: "20vw", bottom: 0, left: 0 }}
           />
         </div>
-        <div className="section" id="intro">
-          <div className="content-fit">
-            <div className="number">01</div>
-            <div className="des">
-              <div className="title">
+        <div className="" id="">
+          <div className="">
+            <div className="">01</div>
+            <div className="">
+              <div className="">
                 MART SPELL TECH Where truly great things can happen
               </div>
               <p></p>
             </div>
           </div>
         </div>
-        <div className="section" id="description">
-          <div className="content-fit">
-            <div className="number">02</div>
-            <div className="des">
-              <div className="title">
+        <div className="" id="">
+          <div className="">
+            <div className="">02</div>
+            <div className="">
+              <div className="">
                 Beautiful story that make your brand unique
               </div>
               <p>
@@ -135,17 +123,17 @@ const Home = () => {
             </div>
           </div>
           <img
-            src="img/leaf1.png"
-            className="decorate"
+            src=""
+            className=""
             alt
             style={{ width: "70vw", bottom: 0, right: 0, zIndex: 101 }}
           />
         </div>
-        <div className="section" id="contact">
-          <div className="content-fit">
-            <div className="number">03</div>
-            <div className="des">
-              <div className="title">CONTACT</div>
+        <div className="" id="">
+          <div className="">
+            <div className="">03</div>
+            <div className="">
+              <div className="">CONTACT</div>
               <table>
                 <tbody>
                   <tr>
@@ -166,13 +154,13 @@ const Home = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="sign">mart</div>
+              <div className="">mart</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="container3D"></div>
+      <div id=""></div>
     </>
   );
 };

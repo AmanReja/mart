@@ -9,7 +9,7 @@ const App = () => {
     <>
       {/* <Navbar></Navbar> */}
       <Banner></Banner>
-      {/* <Home></Home> */}
+      <Home></Home>
     </>
   );
 };
