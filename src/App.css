@@ -16,3 +16,7 @@ body{
 .ball {
   animation: bloom 5s infinite ease-in-out;
 }
+
+body,html{
+  overflow-x: hidden;
+}
