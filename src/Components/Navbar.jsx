@@ -16,7 +16,7 @@ const Navbar = () => {
         <div>
           <a
             className="text-white flex justify-center items-center bg-yellow-500 p-2 rounded-full text-2xl"
-            href="tell-7908854829"
+            href="tel:+917908854829"
           >
             <div className="hidden sm:block">Call Us</div>
             <img className="w-[40px] h-[40px]" src={phone} alt="" />
