@@ -175,9 +175,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <p className=" text-sm mt-10">
-            © martspesstech. All rights reserved.
-          </p>
+          <p className=" text-sm mt-10">©martspelltech. All rights reserved.</p>
         </div>
       </footer>
     </>

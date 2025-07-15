@@ -6,11 +6,9 @@ import im1 from "../assets/Images/bg.png";
 const Banner = () => {
   return (
     <>
-      {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row w-full min-h-[631px] bg-no-repeat bg-cover justify-center items-center px-4 py-8 relative">
+      <div className="flex flex-col lg:flex-row w-full min-h-[631px] bg-no-repeat  bg-cover justify-center items-center px-4 py-8 relative">
         <div className="relative flex flex-col gap-6 justify-center items-start w-full lg:w-[619px] max-w-full mb-8 lg:mb-0">
-          {/* Blurred Ball */}
-          <div className="absolute ball top-0 left-0 w-[120px] h-[120px] bg-orange-400 blur-[50px] rounded-full z-0" />
+          <div className="absolute ball top-0 left-0 w-[120px] h-[120px] bg-orange-400 blur-[50px] rounded-full z-1" />
 
           <h1
             style={{ fontFamily: "Montserrat", fontWeight: 500 }}

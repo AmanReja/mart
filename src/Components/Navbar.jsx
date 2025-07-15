@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import phone from "../assets/icons/phone.svg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handelopen = () => {
+    setOpen((prev) => !prev);
+  };
   return (
     <>
-      <div className="flex w-full h-[71px] bg-transparent justify-between sm:justify-evenly items-center px-[20px] sticky top-[5px] ">
+      <div className="flex w-full h-[71px] bg-transparent justify-between sm:justify-evenly items-center px-[20px] sticky top-[5px] z-50 ">
         <h1 className="text-4xl">Martspell</h1>
-        <div className=" w-[800px] justify-center items-center gap-[20px] text-[18px] hidden sm:flex">
-          <Link to={"/"}>Home</Link>
-          <Link to={"services"}>Services</Link>
-          <Link to={"aboutus"}>About Us</Link>
-          <Link to={"contactus"}>Contact us</Link>
+        <div
+          className={`${
+            open ? "flex w-full" : "hidden w-0"
+          } sm:flex sm:flex-row flex-col w-full sm:w-auto absolute sm:static top-[80px] sm:backdrop-blur-none  backdrop-blur-md    left-0  justify-center items-center gap-[20px] text-[18px]`}
+        >
+          <Link to="/">Home</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/aboutus">About Us</Link>
+          <Link to="/contactus">Contact us</Link>
         </div>
-        <div>
-          <a className="text-white flex justify-center items-center bg-yellow-500 p-2 rounded-full text-2xl">
+
+        <div className="sm:hidden flex">
+          <a
+            onClick={() => {
+              handelopen(), alert("hi");
+            }}
+            className="text-white flex justify-center items-center bg-yellow-500 p-2 rounded-full text-2xl"
+          >
             <svg
               width="40px"
               height="40px"
