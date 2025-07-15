@@ -107,16 +107,16 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div className="w-[200px] h-[200px] bg-lime-400 blur-[80px] absolute"></div>
+      <div className="w-[80px] h-[80px] bg-lime-400 blur-[80px] absolute"></div>
       {/* Case Stories */}
       <div className="">
         <div className="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
           {/* Title */}
           <div className="max-w-3xl mb-10 lg:mb-14">
-            <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">
+            <h2 className="text-whitefont-semibold text-2xl md:text-4xl md:leading-tight">
               Success stories
             </h2>
-            <p className="mt-1 text-neutral-400">
+            <p className="mt-1 ">
               Global brands see measurable success when they collaborate with
               us. From higher conversion and payment approval rates to faster
               processing speeds. Discover their stories here.
