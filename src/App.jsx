@@ -4,13 +4,17 @@ import Banner from "./Components/Banner";
 import "./App.css";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Banner></Banner>
-      <Home></Home>
+
+      <Outlet>
+        <Home></Home>
+      </Outlet>
+
       <Footer></Footer>
     </>
   );

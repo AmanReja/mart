@@ -11,10 +11,12 @@ import i4 from "../assets/icons/Icon2.png";
 import i5 from "../assets/icons/Icon5.png";
 import i6 from "../assets/icons/Icon6.png";
 // import i1 from "../assets/icons/icon1.png";
+import Banner from "./Banner";
 
 const Home = () => {
   return (
     <>
+      <Banner></Banner>
       <div className="w-full h-auto">
         <div className="" id="">
           <div>
