@@ -331,7 +331,7 @@ const Home = () => {
                       2,000+
                     </h3>
                     <p className="mt-1 text-sm sm:text-base text-neutral-400">
-                      Preline partners
+                      partners
                     </p>
                   </div>
                 </div>
