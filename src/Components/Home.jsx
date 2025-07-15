@@ -107,8 +107,8 @@ const Home = () => {
           className="flex flex-col px-[20px] sm:px-[80px] text-left sm:text-center w-full"
         >
           <div className="text-9xl text-center sm:text-left">01</div>
-          <div className="w-full sm:w-[600px] text-left sm:text-center text-5xl sm:text-[60px] ">
-            <div className=" text-center sm:text-left">
+          <div className="w-full sm:w-[600px] text-left text-5xl sm:text-[60px] ">
+            <div className="text-left">
               MART SPELL TECH Where truly great things can happen
             </div>
           </div>
@@ -124,7 +124,7 @@ const Home = () => {
           >
             <div className="text-9xl text-center sm:text-right">02</div>
 
-            <div className=" text-4xl w-full sm:w-[600px] sm:text-7xl min-h-[90px] text-center p-6 sm:text-right  ">
+            <div className=" text-4xl w-full sm:w-[600px] sm:text-7xl min-h-[90px] text-right p-6   ">
               Beautiful story that make your brand unique
             </div>
             <p>
