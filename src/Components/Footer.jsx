@@ -101,8 +101,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-base mb-4 ">Useful links</h4>
-              <ul className="space-y-4">
+              {/* <h4 className="text-base mb-4 ">Useful links</h4> */}
+              {/* <ul className="space-y-4">
                 <li>
                   <a
                     href="javascript:void(0)"
@@ -127,7 +127,7 @@ const Footer = () => {
                     New Arrivals
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div>
               <h4 className="text-base mb-4 ">Information</h4>
