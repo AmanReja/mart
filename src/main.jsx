@@ -13,6 +13,7 @@ import Contactus from "./Components/Contactus.jsx";
 
 import Aboutus from "./Components/Aboutus.jsx";
 import Services from "./Components/Services.jsx";
+import Section1 from "./Components/Section1.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
