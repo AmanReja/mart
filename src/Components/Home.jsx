@@ -10,6 +10,11 @@ import i3 from "../assets/icons/Icon3.png";
 import i4 from "../assets/icons/Icon2.png";
 import i5 from "../assets/icons/Icon5.png";
 import i6 from "../assets/icons/Icon6.png";
+import Bussiness from "../assets/digital/business.png";
+import Ads from "../assets/digital/ads.png";
+import Studio from "../assets/digital/studio.png";
+import Word from "../assets/digital/word.png";
+import Vs from "../assets/digital/vs.png";
 // import i1 from "../assets/icons/icon1.png";
 import Banner from "./Banner";
 import Section1 from "./Section1";
@@ -123,11 +128,8 @@ const Home = () => {
             <div className="max-w-7xl mx-auto">
               {/* Section Header */}
               <div className="text-center mb-12">
-                <span className="text-blue-600 font-semibold text-lg">
-                  WHY CHOOSE US
-                </span>
                 <h2 className="mt-2 text-3xl font-bold  sm:text-4xl">
-                  OUnique Pricing Plans
+                  Our Affiliations
                 </h2>
                 <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
                   Discover what makes our product stand out from the
@@ -135,141 +137,42 @@ const Home = () => {
                 </p>
               </div>
               {/* Features Grid */}
-              <div className="flex gap-[50px] justify-center items-center  w-full flex-wrap">
-                {/* Feature 1 */}
-                <div className="backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px] h-[250px]">
-                  <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-blue-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold  mb-3">
-                    eCommerce Website
-                  </h3>
-                  <p className="">
-                    Designed for ease and speed — intuitive shopping, secure
-                    checkout, and smart product management for users and admins
-                    alike.
-                  </p>
+              <div className="flex w-full flex-wrap justify-center items-center gap-[20px]">
+                <div className="flex w-[220px] h-[120px] bg-lime-300 rounded">
+                  <img
+                    className="object-contain w-full h-full"
+                    src={Bussiness}
+                    alt=""
+                  />
                 </div>
-                {/* Feature 2 */}
-                <div className="backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px] h-[250px]">
-                  <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-green-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold  mb-3">
-                    Portfolio Website
-                  </h3>
-                  <p className="">
-                    A sleek, personal portfolio built for clarity and impact —
-                    showcasing projects, skills, and experience with smooth
-                    navigation and thoughtful design.
-                  </p>
+                <div className="flex w-[220px] h-[120px] bg-yellow-300 rounded">
+                  <img
+                    className="object-contain w-full h-full"
+                    src={Ads}
+                    alt=""
+                  />
                 </div>
-                {/* Feature 3 */}
-                <div className="backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px] h-[250px]">
-                  <div className="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-purple-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold  mb-3">
-                    Social Media Marketing
-                  </h3>
-                  <p className="">
-                    Strategic content, smart targeting, and real-time engagement
-                    — built to grow brand visibility and connect with audiences
-                    where they scroll.
-                  </p>
+                <div className="flex w-[220px] h-[120px] bg-pink-300 rounded">
+                  <img
+                    className="object-contain w-full h-full"
+                    src={Studio}
+                    alt=""
+                  />
                 </div>
-                {/* Feature 4 */}
-                <div className="backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px] h-[250px]">
-                  <div className="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-yellow-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold  mb-3">
-                    Google My Business
-                  </h3>
-                  <p className="">
-                    Optimized listings that put your business on the map —
-                    enhancing local visibility, building trust, and driving
-                    real-world visits with ease.
-                  </p>
+                <div className="flex w-[220px] h-[120px] bg-amber-500 rounded">
+                  <img
+                    className="object-contain w-full h-full"
+                    src={Vs}
+                    alt=""
+                  />
                 </div>
-                {/* Feature 5 */}
-                <div className="backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 w-[350px] h-[250px]">
-                  <div className="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-red-600"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">360° Marketing</h3>
-                  <p className="">
-                    A full-circle strategy that connects every touchpoint —
-                    blending digital, social, and offline channels to deliver a
-                    seamless brand experience.
-                  </p>
+                <div className="flex w-[220px] h-[120px] bg-white rounded">
+                  <img
+                    className="object-contain w-full h-full"
+                    src={Word}
+                    alt=""
+                  />
                 </div>
-                {/* Feature 6 */}
               </div>
             </div>
           </section>
@@ -301,7 +204,7 @@ const Home = () => {
       </div>
 
       {/* Stats */}
-      <div className="bg-neutral-900">
+      <div className="">
         <div className="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
           <div className="border border-neutral-800 rounded-xl">
             <div className="p-4 lg:p-8 bg-linear-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
