@@ -107,7 +107,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-
+      <div className="w-[200px] h-[200px] bg-lime-400 blur-[80px] absolute"></div>
       {/* Case Stories */}
       <div className="">
         <div className="max-w-5xl px-4 xl:px-0 py-24 mx-auto">
