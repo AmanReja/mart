@@ -17,16 +17,44 @@ const Navbar = () => {
             open ? "flex w-full" : "hidden w-0"
           } sm:flex sm:flex-row flex-col w-full sm:w-auto absolute sm:static top-[80px] sm:backdrop-blur-none  backdrop-blur-md    left-0  justify-center items-center gap-[20px] text-[18px]`}
         >
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/aboutus">About Us</Link>
-          <Link to="/contactus">Contact us</Link>
+          <Link
+            onClick={() => {
+              setOpen(false);
+            }}
+            to="/"
+          >
+            Home
+          </Link>
+          <Link
+            onClick={() => {
+              setOpen(false);
+            }}
+            to="/services"
+          >
+            Services
+          </Link>
+          <Link
+            onClick={() => {
+              setOpen(false);
+            }}
+            to="/aboutus"
+          >
+            About Us
+          </Link>
+          <Link
+            onClick={() => {
+              setOpen(false);
+            }}
+            to="/contactus"
+          >
+            Contact us
+          </Link>
         </div>
 
         <div className="sm:hidden flex">
           <a
             onClick={() => {
-              handelopen(), alert("hi");
+              handelopen();
             }}
             className="text-white flex justify-center items-center bg-yellow-500 p-2 rounded-full text-2xl"
           >
