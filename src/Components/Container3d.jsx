@@ -28,8 +28,8 @@ const Container3d = () => {
     container.appendChild(renderer.domElement);
 
     // Lighting
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
-    const topLight = new THREE.DirectionalLight(0xffffff, 5);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 3.5);
+    const topLight = new THREE.DirectionalLight(0xffffff, 8);
     topLight.position.set(500, 500, 500);
     scene.add(ambientLight, topLight);
 
