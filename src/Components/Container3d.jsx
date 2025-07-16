@@ -6,24 +6,29 @@ import Bike from "../assets/models/bike2.glb";
 
 const Container3d = () => {
   useEffect(() => {
-    // Determine if device is mobile
-    let isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 768;
 
-    // Camera setup based on screen size
+    // Hide 3D container on mobile
+    if (isMobile) {
+      const container = document.getElementById("container3D");
+      if (container) container.style.display = "none";
+      return;
+    }
+
+    // Camera
     const camera = new THREE.PerspectiveCamera(
-      isMobile ? 20 : 10,
+      10,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    camera.position.z = isMobile ? 18 : 13;
+    camera.position.z = 13;
 
     // Scene & Renderer
     const scene = new THREE.Scene();
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    // Mount canvas to DOM
     const container = document.getElementById("container3D");
     container.appendChild(renderer.domElement);
 
@@ -38,56 +43,28 @@ const Container3d = () => {
     let bee;
     let mixer;
 
-    // Model positions per section
-    const getArrPositionModel = () => {
-      return isMobile
-        ? [
-            {
-              id: "banner",
-              position: { x: 0, y: -1.5, z: 0 },
-              rotation: { x: 0, y: 1.5, z: 0 },
-            },
-            {
-              id: "intro",
-              position: { x: 0.5, y: -1.5, z: -5 },
-              rotation: { x: 0.4, y: -0.4, z: 0 },
-            },
-            {
-              id: "description",
-              position: { x: 1.5, y: -1.5, z: -5 },
-              rotation: { x: 0, y: 0.5, z: 0 },
-            },
-            {
-              id: "contact",
-              position: { x: 0.8, y: -1.5, z: 0 },
-              rotation: { x: 0.3, y: -0.5, z: 0 },
-            },
-          ]
-        : [
-            {
-              id: "banner",
-              position: { x: 0, y: -1, z: 0 },
-              rotation: { x: 0, y: 1.5, z: 0 },
-            },
-            {
-              id: "intro",
-              position: { x: 1, y: -1, z: -5 },
-              rotation: { x: 0.5, y: -0.5, z: 0 },
-            },
-            {
-              id: "description",
-              position: { x: -1, y: -1, z: -5 },
-              rotation: { x: 0, y: 0.5, z: 0 },
-            },
-            {
-              id: "contact",
-              position: { x: 0.8, y: -1, z: 0 },
-              rotation: { x: 0.3, y: -0.5, z: 0 },
-            },
-          ];
-    };
-
-    let arrPositionModel = getArrPositionModel();
+    const arrPositionModel = [
+      {
+        id: "banner",
+        position: { x: 0, y: -1, z: 0 },
+        rotation: { x: 0, y: 1.5, z: 0 },
+      },
+      {
+        id: "intro",
+        position: { x: 1, y: -1, z: -5 },
+        rotation: { x: 0.5, y: -0.5, z: 0 },
+      },
+      {
+        id: "description",
+        position: { x: -1, y: -1, z: -5 },
+        rotation: { x: 0, y: 0.5, z: 0 },
+      },
+      {
+        id: "contact",
+        position: { x: 0.8, y: -1, z: 0 },
+        rotation: { x: 0.3, y: -0.5, z: 0 },
+      },
+    ];
 
     const modelMove = () => {
       const sections = document.querySelectorAll(".section");
@@ -102,7 +79,7 @@ const Container3d = () => {
       const activeIndex = arrPositionModel.findIndex(
         (val) => val.id === currentSection
       );
-      if (activeIndex >= 0) {
+      if (activeIndex >= 0 && bee) {
         const coords = arrPositionModel[activeIndex];
         gsap.to(bee.position, {
           ...coords.position,
@@ -117,27 +94,19 @@ const Container3d = () => {
       }
     };
 
-    // Load the 3D model
     loader.load(
       Bike,
       function (gltf) {
         bee = gltf.scene;
-
-        // Set responsive scale
-        bee.scale.set(
-          isMobile ? 0.9 : 1,
-          isMobile ? 0.9 : 1,
-          isMobile ? 0.9 : 1
-        );
-
+        bee.scale.set(1, 1, 1);
         scene.add(bee);
-        mixer = new THREE.AnimationMixer(bee);
 
+        mixer = new THREE.AnimationMixer(bee);
         if (gltf.animations.length > 0) {
           mixer.clipAction(gltf.animations[0]).play();
         }
 
-        modelMove(); // Position model on load
+        modelMove(); // Position on load
       },
       undefined,
       function (error) {
@@ -145,7 +114,6 @@ const Container3d = () => {
       }
     );
 
-    // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
       if (mixer) mixer.update(0.02);
@@ -153,45 +121,18 @@ const Container3d = () => {
     };
     animate();
 
-    // Scroll moves model
-    const handleScroll = () => {
-      if (bee) modelMove();
-    };
+    window.addEventListener("scroll", modelMove);
 
-    // Resize responsiveness
-    const handleResize = () => {
+    window.addEventListener("resize", () => {
       const width = window.innerWidth;
       const height = window.innerHeight;
-      isMobile = width < 768;
-
       renderer.setSize(width, height);
       camera.aspect = width / height;
-      camera.fov = isMobile ? 20 : 10;
-      camera.position.z = isMobile ? 18 : 13;
       camera.updateProjectionMatrix();
+    });
 
-      // Update scale dynamically
-      if (bee) {
-        bee.scale.set(
-          isMobile ? 0.7 : 3,
-          isMobile ? 0.7 : 3,
-          isMobile ? 0.7 : 3
-        );
-      }
-
-      // Update position mapping for mobile
-      arrPositionModel = getArrPositionModel();
-      modelMove();
-    };
-
-    // Event listeners
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup on unmount
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", modelMove);
       container.removeChild(renderer.domElement);
     };
   }, []);
