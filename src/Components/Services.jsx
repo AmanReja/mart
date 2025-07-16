@@ -14,7 +14,7 @@ const Services = () => {
             <div className="mt-5 max-w-4xl">
               <p className="text-neutral-400 text-lg">
                 It is a creative hub where imagination meets craftsmanship to
-                transform ideas into tangible realities. At Preline Agency, we
+                transform ideas into tangible realities. At Martspell, we
                 specialize in turning conceptual visions into concrete forms,
                 whether it be through design, artistry, or technological
                 innovation.
