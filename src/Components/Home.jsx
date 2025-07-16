@@ -18,13 +18,14 @@ import Vs from "../assets/digital/vs.png";
 // import i1 from "../assets/icons/icon1.png";
 import Banner from "./Banner";
 import Section1 from "./Section1";
+import Container3d from "./Container3d";
 // import Container3d from "./Container3d";
 
 const Home = () => {
   return (
     <>
       <Banner></Banner>
-      <div className="w-full h-auto">
+      <div id="banner" className="w-full h-auto section">
         <div className="" id="">
           <div>
             <div
@@ -204,7 +205,7 @@ const Home = () => {
       </div>
 
       {/* Stats */}
-      <div className="">
+      <div id="intro" className="section">
         <div className="max-w-5xl px-4 xl:px-0 py-10 mx-auto">
           <div className="border border-neutral-800 rounded-xl">
             <div className="p-4 lg:p-8 bg-linear-to-bl from-neutral-800 via-neutral-900 to-neutral-950 rounded-xl">
@@ -240,7 +241,7 @@ const Home = () => {
                 </div>
                 {/* End Stats */}
                 {/* Stats */}
-                <div className="relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
+                <div className="section relative text-center first:before:hidden before:absolute before:-top-full sm:before:top-1/2 before:start-1/2 sm:before:-start-6 before:w-px before:h-20 before:bg-neutral-800 before:rotate-[60deg] sm:before:rotate-12 before:transform sm:before:-translate-y-1/2 before:-translate-x-1/2 sm:before:-translate-x-0 before:mt-3.5 sm:before:mt-0">
                   <div className="flex justify-center items-center -space-x-5">
                     <img
                       className="relative z-2 shrink-0 size-8 rounded-full border-3 border-neutral-800"
@@ -305,6 +306,7 @@ const Home = () => {
       </div>
 
       <Section1></Section1>
+      <Container3d></Container3d>
     </>
   );
 };

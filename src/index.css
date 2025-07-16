@@ -1,1 +1,9 @@
-@import "tailwindcss"
+@import "tailwindcss";
+#container3D { 
+  border: 1px white;
+    position: fixed;
+    inset: 0;
+    /* background-color: red; */
+    z-index: 100;
+    pointer-events: none;
+}
