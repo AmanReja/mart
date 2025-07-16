@@ -54,7 +54,7 @@ const Container3d = () => {
             },
             {
               id: "description",
-              position: { x: -0.5, y: -1.5, z: -5 },
+              position: { x: 1.5, y: -1.5, z: -5 },
               rotation: { x: 0, y: 0.5, z: 0 },
             },
             {
@@ -125,9 +125,9 @@ const Container3d = () => {
 
         // Set responsive scale
         bee.scale.set(
-          isMobile ? 0.7 : 1,
-          isMobile ? 0.7 : 1,
-          isMobile ? 0.7 : 1
+          isMobile ? 0.9 : 1,
+          isMobile ? 0.9 : 1,
+          isMobile ? 0.9 : 1
         );
 
         scene.add(bee);
