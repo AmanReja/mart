@@ -2,6 +2,7 @@ import React from "react";
 import Fram from "../assets/Images/fram.png";
 import Bn from "../assets/Images/bn.png";
 import im1 from "../assets/Images/bg.png";
+import Phone from "../assets/icons/phone.svg";
 
 const Banner = () => {
   return (
@@ -32,6 +33,10 @@ const Banner = () => {
             Ready to talk about how we can help improve your marketing
             performance?
           </p>
+          <button className="p-3 px-[30px] gap-[5px] bg-amber-500 rounded-3xl mt-[10px] flex justify-center items-center">
+            <img className="w-[30px] h-[30px]" src={Phone} alt="" />
+            <a href="tel:+917908854829">Callus</a>
+          </button>
         </div>
 
         <div className="w-full lg:w-[619px] h-auto lg:h-full">
