@@ -14,6 +14,7 @@ import Contactus from "./Components/Contactus.jsx";
 import Aboutus from "./Components/Aboutus.jsx";
 import Services from "./Components/Services.jsx";
 import Section1 from "./Components/Section1.jsx";
+import Terms from "./Components/Terms.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="/contactus" element={<Contactus />} />
       <Route path="/aboutus" element={<Aboutus />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/terms" element={<Terms />} />
     </Route>
   )
 );

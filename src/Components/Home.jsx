@@ -19,6 +19,7 @@ import Vs from "../assets/digital/vs.png";
 import Banner from "./Banner";
 import Section1 from "./Section1";
 import Container3d from "./Container3d";
+import Review from "./Review";
 // import Container3d from "./Container3d";
 
 const Home = () => {
@@ -139,35 +140,35 @@ const Home = () => {
               </div>
               {/* Features Grid */}
               <div className="flex w-full flex-wrap justify-center items-center gap-[20px]">
-                <div className="flex w-[220px] h-[120px] bg-lime-300 rounded">
+                <div className="flex w-[220px] p-2 h-[120px] bg-lime-300 rounded">
                   <img
                     className="object-contain w-full h-full"
                     src={Bussiness}
                     alt=""
                   />
                 </div>
-                <div className="flex w-[220px] h-[120px] bg-yellow-300 rounded">
+                <div className="flex w-[220px] h-[120px] p-2 bg-yellow-300 rounded">
                   <img
                     className="object-contain w-full h-full"
                     src={Ads}
                     alt=""
                   />
                 </div>
-                <div className="flex w-[220px] h-[120px] bg-pink-300 rounded">
+                <div className="flex w-[220px] h-[120px] p-2 bg-pink-300 rounded">
                   <img
                     className="object-contain w-full h-full"
                     src={Studio}
                     alt=""
                   />
                 </div>
-                <div className="flex w-[220px] h-[120px] bg-amber-500 rounded">
+                <div className="flex w-[220px] h-[120px] p-2 bg-amber-500 rounded">
                   <img
                     className="object-contain w-full h-full"
                     src={Vs}
                     alt=""
                   />
                 </div>
-                <div className="flex w-[220px] h-[120px] bg-white rounded">
+                <div className="flex w-[220px] h-[120px] p-2 bg-white rounded">
                   <img
                     className="object-contain w-full h-full"
                     src={Word}
@@ -203,6 +204,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <Review></Review>
 
       {/* Stats */}
       <div id="intro" className="section">

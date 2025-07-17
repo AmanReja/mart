@@ -221,6 +221,30 @@ const Contactus = () => {
                   </address>
                 </div>
               </div>
+              <div className="flex gap-x-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  id="phone"
+                >
+                  <path
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="gray"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 15.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.92z"
+                  ></path>
+                </svg>
+                <div className="grow">
+                  <h4 className="text-white font-semibold">Call us:</h4>
+                  <a className="mt-1 text-neutral-400 text-sm not-italic">
+                    +91 79088 54829
+                  </a>
+                </div>
+              </div>
               {/* End Item */}
               {/* Item */}
               <div className="flex gap-x-5">
@@ -243,7 +267,7 @@ const Contactus = () => {
                   <h4 className="text-white font-semibold">Email us:</h4>
                   <a
                     className="mt-1 text-neutral-400 text-sm hover:text-neutral-200 focus:outline-hidden focus:text-neutral-200"
-                    href="#mailto:example@site.co"
+                    href="mailto:martspelltech@gmail.com"
                     target="_blank"
                   >
                     martspelltech@gmail.com

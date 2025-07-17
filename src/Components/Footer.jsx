@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -133,44 +134,29 @@ const Footer = () => {
               <h4 className="text-base mb-4 ">Information</h4>
               <ul className="space-y-4">
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className=" hover:text-white text-sm"
-                  >
+                  <Link to={"/aboutus"} className=" hover:text-white text-sm">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className=" hover:text-white text-sm"
-                  >
+                  <Link to={"/terms"} className=" hover:text-white text-sm">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className=" hover:text-white text-sm"
-                  >
+                  <Link className=" hover:text-white text-sm">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className=" hover:text-white text-sm"
-                  >
-                    Sale
-                  </a>
+                  <Link to={"/contactus"} className=" hover:text-white text-sm">
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="javascript:void(0)"
-                    className=" hover:text-white text-sm"
-                  >
-                    Documentation
-                  </a>
+                  <Link to={"/services"} className=" hover:text-white text-sm">
+                    Services
+                  </Link>
                 </li>
               </ul>
             </div>
