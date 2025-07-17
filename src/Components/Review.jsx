@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -48,17 +48,26 @@ export default function Review() {
       <br />
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={30}
-        slidesPerView={3}
         loop={true}
+        spaceBetween={30}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        // a11y={{
-        //   prevSlideMessage: "Previous review",
-        //   nextSlideMessage: "Next review",
-        // }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {testimonials.map((t, i) => (
           <SwiperSlide key={i}>
@@ -69,9 +78,9 @@ export default function Review() {
                   style={{ backgroundColor: t.svgColor }}
                 />
                 <div className="ml-4">
-                  <p className="text-3xl font-semibold text-white">{t.name}</p>
-                  <h3 className="mt-2 font-medium text-lg text-white">
-                    {t.title}
+                  <p className="text-xl font-semibold text-white">{t.name}</p>
+                  <h3 className="mt-1 font-medium text-sm text-white">
+                    {t.role}
                   </h3>
                 </div>
               </div>
