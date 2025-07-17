@@ -39,7 +39,7 @@ const Home = () => {
 
             <div className=" w-full h-auto  relative top-[50px] flex flex-wrap px-[90px] items-center justify-center gap-[10px]">
               <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px] ">
-                <img className="w-[40px] h-[40px]" src={i1} alt="" />
+                <img className="w-[70px] h-[70px]" src={i1} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Development
                 </h1>
@@ -48,7 +48,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex w-[284px] min-h-[284px] min-w-[284px] h-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px] ">
-                <img className="w-[40px] h-[40px]" src={i2} alt="" />
+                <img className="w-[70px] h-[70px]" src={i2} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   UI/UX Designer
                 </h1>
@@ -58,7 +58,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
-                <img className="w-[40px] h-[40px]" src={i3} alt="" />
+                <img className="w-[70px] h-[70px]" src={i3} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Photography
                 </h1>
@@ -68,7 +68,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
-                <img className="w-[40px] h-[40px]" src={i4} alt="" />
+                <img className="w-[70px] h-[70px]" src={i4} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Videography
                 </h1>
@@ -77,7 +77,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
-                <img className="w-[40px] h-[40px]" src={i5} alt="" />
+                <img className="w-[70px] h-[70px]" src={i5} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Motion Graphik
                 </h1>
@@ -86,7 +86,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex w-[284px] h-[284px] min-h-[284px] min-w-[284px] p-[12px] flex-col justify-center items-center backdrop-blur-md bg-gradient-to-bl from-white/10 to-white/5 rounded-2xl gap-[10px]">
-                <img className="w-[40px] h-[40px]" src={i6} alt="" />
+                <img className="w-[70px] h-[70px]" src={i6} alt="" />
                 <h1 style={{ fontFamily: "Montserrat" }} className="text">
                   Graphik Designer
                 </h1>
@@ -235,7 +235,7 @@ const Home = () => {
                   </svg>
                   <div className="mt-3 sm:mt-5">
                     <h3 className="text-lg sm:text-3xl font-semibold text-white">
-                      2,000+
+                      10+
                     </h3>
                     <p className="mt-1 text-sm sm:text-base text-neutral-400">
                       partners
@@ -294,7 +294,7 @@ const Home = () => {
                   </svg>
                   <div className="mt-3 sm:mt-5">
                     <h3 className="text-lg sm:text-3xl font-semibold text-white">
-                      $55M+
+                      $5M+
                     </h3>
                     <p className="mt-1 text-sm sm:text-base text-neutral-400">
                       Ads managed yearly
