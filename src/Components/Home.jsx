@@ -309,7 +309,7 @@ const Home = () => {
       </div>
 
       <Section1></Section1>
-      <Container3d></Container3d>
+      {/* <Container3d></Container3d> */}
     </>
   );
 };

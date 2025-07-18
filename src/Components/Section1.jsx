@@ -96,11 +96,7 @@ const Section1 = () => {
         </svg>
         <div className="relative z-10">
           <div className="max-w-5xl px-4 xl:px-0 mx-auto">
-            <div className="mb-4">
-              <h2 className="text-neutral-400">
-                Trusted by Open Source, enterprise, and more than 99,000 of you
-              </h2>
-            </div>
+            <div className="mb-4"></div>
             <div className="flex justify-between gap-6">
               <Logoslider></Logoslider>
             </div>
@@ -116,11 +112,6 @@ const Section1 = () => {
             <h2 className="text-whitefont-semibold text-2xl md:text-4xl md:leading-tight">
               Success stories
             </h2>
-            <p className="mt-1 ">
-              Global brands see measurable success when they collaborate with
-              us. From higher conversion and payment approval rates to faster
-              processing speeds. Discover their stories here.
-            </p>
           </div>
           {/* End Title */}
           {/* Card Grid */}
