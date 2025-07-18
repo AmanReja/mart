@@ -15,6 +15,7 @@ import Aboutus from "./Components/Aboutus.jsx";
 import Services from "./Components/Services.jsx";
 import Section1 from "./Components/Section1.jsx";
 import Terms from "./Components/Terms.jsx";
+import Carrer from "./Components/Carrer.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="/aboutus" element={<Aboutus />} />
       <Route path="/services" element={<Services />} />
       <Route path="/terms" element={<Terms />} />
+      <Route path="/carrer" element={<Carrer />} />
     </Route>
   )
 );

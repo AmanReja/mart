@@ -49,6 +49,14 @@ const Navbar = () => {
           >
             Contact us
           </Link>
+          <Link
+            onClick={() => {
+              setOpen(false);
+            }}
+            to="/carrer"
+          >
+            Carrer
+          </Link>
         </div>
 
         <div className="sm:hidden flex">
