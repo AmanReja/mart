@@ -1,7 +1,78 @@
 import React, { useState } from "react";
 import business from "../assets/digital/business.png";
+import Bussiness from "../assets/digital/business.png";
+import Ads from "../assets/digital/ads.png";
+import Studio from "../assets/digital/studio.png";
+import Word from "../assets/digital/word.png";
+import Vs from "../assets/digital/vs.png";
 
 const Services = () => {
+  const tools = [
+    {
+      name: "Google My Business",
+      logo: business,
+      features: [
+        "Create and manage business profile",
+        "Customer reviews and ratings",
+        "Business insights and analytics",
+        "Location visibility on Google Maps & Search",
+        "Add photos, offers, and updates",
+        "Messaging and appointment links",
+        "Post announcements and events",
+      ],
+    },
+    {
+      name: "Android Studio",
+      logo: Studio,
+      features: [
+        "Official IDE for Android development",
+        "Built-in Android Emulator",
+        "Support for Kotlin, Java, and C++",
+        "Real-time code analysis and debugging",
+        "UI Design with Layout Editor",
+        "Gradle-based build system",
+        "APK Analyzer and Profiler tools",
+      ],
+    },
+    {
+      name: "Google Ads",
+      logo: Ads,
+      features: [
+        "Search, Display, Shopping, and Video Ads",
+        "Targeting by keywords, location, demographics",
+        "Performance tracking and analytics",
+        "Budget and bidding control",
+        "Integration with Google Analytics",
+        "Ad extensions (sitelinks, callouts, etc.)",
+        "Remarketing and conversion tracking",
+      ],
+    },
+    {
+      name: "WordPress",
+      features: [
+        "Open-source content management system",
+        "Thousands of free themes and plugins",
+        "SEO-friendly structure",
+        "Built-in blog and editor (Gutenberg)",
+        "WooCommerce support for eCommerce",
+        "User roles and permissions",
+        "Media management and scheduling",
+      ],
+    },
+    {
+      name: "VS Code",
+      features: [
+        "Lightweight and fast code editor",
+        "Support for multiple languages (JS, Python, C++, etc.)",
+        "Integrated Git and terminal",
+        "Extensive extension marketplace",
+        "Smart code completion (IntelliSense)",
+        "Debugging and live share support",
+        "Customizable themes and keybindings",
+      ],
+    },
+  ];
+
   const plans = [
     {
       plan: "Iron Plan",
@@ -302,9 +373,9 @@ const Services = () => {
               <span className="text-sky-500">G</span>
               <span className="text-red-500">o</span>
               <span className="text-yellow-500">o</span>
-              <span className="text-sky-500">o</span>
-              <span className="text-green-500">o</span>
-              <span className="text-red-500">e</span> My Business
+              <span className="text-sky-500">g</span>
+              <span className="text-green-500">l</span>
+              <span className="text-red-500">e</span>My Business
             </h1>
             <p className="dark:text-gray-400 text-black text-base  md:text-lg lg:text-xl font-normal  sm:leading-7">
               Google My Business permits you to provide photos of your business,
@@ -421,6 +492,39 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      <div className="w-full h-auto ">
+        <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-2">
+          {tools.map((t) => (
+            <div className="w-[20rem] mx-auto flex flex-col gap-2 px-4 border rounded-lg bg-white dark:bg-gray-900">
+              <div className="w-full flex justify-center items-center">
+                <img
+                  className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]"
+                  src="https://lh3.googleusercontent.com/a/ACg8ocIexhmmTS8LcwWo1fPGY5Fl3KXpd-JuBE_Gj56P3rUR2g=s96-c"
+                  alt="Profile Image"
+                />
+              </div>
+              <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
+                <h1 className="uppercase text-lg font-semibold dark:text-white">
+                  Software Developer
+                </h1>
+                <h2 className="text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+                  samuel abera
+                </h2>
+                <p className="text-gray-700 dark:text-gray-300">
+                  Adaptable developer with experience in frontend (Nuxt.js) and
+                  backend (Laravel/Nest.js). Passionate about web development,
+                  quick learner, and committed to exceptional websites. Let's
+                  collaborate!
+                </p>
+                <button className="w-[60%] mx-auto bg-blue-500 text-white rounded-3xl px-4 py-2">
+                  Follow
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
