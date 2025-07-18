@@ -493,7 +493,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="w-full h-auto ">
+      {/* <div className="w-full h-auto ">
         <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-2">
           {tools.map((t) => (
             <div className="w-[20rem] mx-auto flex flex-col gap-2 px-4 border rounded-lg bg-white dark:bg-gray-900">
@@ -524,7 +524,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
