@@ -10,6 +10,7 @@ const Services = () => {
   const tools = [
     {
       name: "Google My Business",
+      color: "bg-lime-400",
       logo: business,
       features: [
         "Create and manage business profile",
@@ -23,6 +24,7 @@ const Services = () => {
     },
     {
       name: "Android Studio",
+      color: "red-400",
       logo: Studio,
       features: [
         "Official IDE for Android development",
@@ -36,6 +38,7 @@ const Services = () => {
     },
     {
       name: "Google Ads",
+      color: "violet-400",
       logo: Ads,
       features: [
         "Search, Display, Shopping, and Video Ads",
@@ -49,6 +52,8 @@ const Services = () => {
     },
     {
       name: "WordPress",
+      color: "violet-400",
+      logo: Word,
       features: [
         "Open-source content management system",
         "Thousands of free themes and plugins",
@@ -61,6 +66,8 @@ const Services = () => {
     },
     {
       name: "VS Code",
+      color: "bg-amber-400",
+      logo: Vs,
       features: [
         "Lightweight and fast code editor",
         "Support for multiple languages (JS, Python, C++, etc.)",
@@ -369,7 +376,7 @@ const Services = () => {
       <div className=" w-full">
         <section className=" px-8 lg:px-16 py-20 max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="order-2 md:order-1 max-w-[531px] flex flex-col items-center text-center md:text-left md:items-start gap-9">
-            <h1 className="dark:text-white  text-black text-3xl md:text-4xl lg:text-6xl font-medium ">
+            <h1 className=" text-3xl md:text-4xl lg:text-6xl font-medium ">
               <span className="text-sky-500">G</span>
               <span className="text-red-500">o</span>
               <span className="text-yellow-500">o</span>
@@ -377,7 +384,7 @@ const Services = () => {
               <span className="text-green-500">l</span>
               <span className="text-red-500">e</span>My Business
             </h1>
-            <p className="dark:text-gray-400 text-black text-base  md:text-lg lg:text-xl font-normal  sm:leading-7">
+            <p className=" text-base  md:text-lg lg:text-xl font-normal  sm:leading-7">
               Google My Business permits you to provide photos of your business,
               including your location, services, and products. You can add
               crucial information about your company, such as opening and
@@ -493,38 +500,33 @@ const Services = () => {
         </div>
       </section>
 
-      {/* <div className="w-full h-auto ">
-        <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-2">
+      <div className="w-full h-auto ">
+        <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-9">
           {tools.map((t) => (
-            <div className="w-[20rem] mx-auto flex flex-col gap-2 px-4 border rounded-lg bg-white dark:bg-gray-900">
+            <div
+              className={`w-[20rem] mx-auto flex flex-col gap-2 px-4  rounded-lg bg-white dark:bg-gray-900`}
+            >
               <div className="w-full flex justify-center items-center">
                 <img
-                  className="w-[8rem] h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-[4rem]"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocIexhmmTS8LcwWo1fPGY5Fl3KXpd-JuBE_Gj56P3rUR2g=s96-c"
-                  alt="Profile Image"
+                  className="w-[8rem] h-[8rem] rounded-full shadow-lg relative -top-[4rem]"
+                  src={t.logo}
+                  alt="logo"
                 />
               </div>
               <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
                 <h1 className="uppercase text-lg font-semibold dark:text-white">
-                  Software Developer
+                  {t.name}
                 </h1>
-                <h2 className="text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
-                  samuel abera
-                </h2>
-                <p className="text-gray-700 dark:text-gray-300">
-                  Adaptable developer with experience in frontend (Nuxt.js) and
-                  backend (Laravel/Nest.js). Passionate about web development,
-                  quick learner, and committed to exceptional websites. Let's
-                  collaborate!
-                </p>
+
+                <p className="text-gray-700 dark:text-gray-300">{t.features}</p>
                 <button className="w-[60%] mx-auto bg-blue-500 text-white rounded-3xl px-4 py-2">
-                  Follow
+                  Explore
                 </button>
               </div>
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
