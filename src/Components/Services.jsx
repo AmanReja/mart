@@ -516,7 +516,7 @@ const Services = () => {
               <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
                 <h1 className="uppercase text-lg font-semibold">{t.name}</h1>
 
-                <p className="text-gray-700 dark:text-gray-300">{t.features}</p>
+                <p className="">{t.features}</p>
                 <button className="w-[60%] mx-auto bg-blue-500 text-white rounded-3xl px-4 py-2">
                   Explore
                 </button>
