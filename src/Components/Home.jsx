@@ -114,7 +114,7 @@ const Home = () => {
         </div>
 
         <div
-          style={{ fontFamily: "devil breeze" }}
+          style={{ fontFamily: "Montserrat" }}
           className="flex flex-col px-[20px] sm:px-[80px] text-left sm:text-center w-full"
         >
           <div className="text-9xl text-center sm:text-left">01</div>
@@ -185,7 +185,7 @@ const Home = () => {
           id=""
         >
           <div
-            style={{ fontFamily: "devil breeze" }}
+            style={{ fontFamily: "Montserrat" }}
             className="flex flex-col w-[600px]"
           >
             <div className="text-9xl text-center sm:text-right">02</div>
