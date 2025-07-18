@@ -143,10 +143,10 @@ const Services = () => {
       <div className=" w-full">
         <section className=" px-8 lg:px-16 py-20 max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
           <div className="order-2 md:order-1 max-w-[531px] flex flex-col items-center text-center md:text-left md:items-start gap-9">
-            <h1 className="dark:text-white  text-black text-3xl md:text-4xl lg:text-6xl font-medium ">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium ">
               Welcome your business to the world’s most-visited website
             </h1>
-            <p className="dark:text-gray-400 text-black text-base  md:text-lg lg:text-xl font-normal  sm:leading-7">
+            <p className="text-base  md:text-lg lg:text-xl font-normal  sm:leading-7">
               A growing portfolio of utilities
             </p>
           </div>
