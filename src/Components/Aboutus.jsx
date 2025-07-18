@@ -92,9 +92,8 @@ const Aboutus = () => {
               </p>
 
               <a
-                href="/"
                 aria-label
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-black "
               >
                 Learn more
               </a>
@@ -153,9 +152,8 @@ const Aboutus = () => {
               </p>
 
               <a
-                href="/"
                 aria-label
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-black "
               >
                 Learn more
               </a>
@@ -261,9 +259,8 @@ const Aboutus = () => {
               </p>
 
               <a
-                href="/"
                 aria-label
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-black "
               >
                 Learn more
               </a>

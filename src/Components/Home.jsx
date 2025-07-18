@@ -30,7 +30,7 @@ const Home = () => {
         <div className="" id="">
           <div>
             <div
-              style={{ fontFamily: "devil breeze " }}
+              style={{ fontFamily: "Montserrat" }}
               className="text-center text-lime-400 text-5xl font-bold px-[5px]  w-full "
             >
               The Service We
