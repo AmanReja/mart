@@ -508,7 +508,7 @@ const Services = () => {
             >
               <div className="w-full flex justify-center items-center">
                 <img
-                  className="w-[8rem] h-[8rem] rounded-full shadow-lg relative -top-[4rem]"
+                  className="w-[8rem] bg-lime-500 bg-contain h-[8rem] rounded-full shadow-lg relative -top-[4rem]"
                   src={t.logo}
                   alt="logo"
                 />
