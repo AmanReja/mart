@@ -105,10 +105,12 @@ const Carrer = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">{p.title}</h3>
 
-                  <button className="p-4 px-[20px] rounded-2xl bg-amber-600">
-                    {" "}
+                  <a
+                    href="https://forms.gle/YCRFWyHEaZiw6gx56"
+                    className="p-4 px-[20px] rounded-2xl bg-amber-600"
+                  >
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
