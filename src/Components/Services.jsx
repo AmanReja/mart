@@ -504,7 +504,7 @@ const Services = () => {
         <div className="w-full h-full py-20 flex flex-wrap justify-center items-center gap-9">
           {tools.map((t) => (
             <div
-              className={`w-[20rem] mx-auto flex flex-col gap-2 px-4  rounded-lg bg-white dark:bg-gray-900`}
+              className={`w-[20rem] mx-auto flex flex-col gap-2 px-4 rounded-lg `}
             >
               <div className="w-full flex justify-center items-center">
                 <img
@@ -514,9 +514,7 @@ const Services = () => {
                 />
               </div>
               <div className="w-full h-full text-center flex flex-col gap-4 relative -top-10">
-                <h1 className="uppercase text-lg font-semibold dark:text-white">
-                  {t.name}
-                </h1>
+                <h1 className="uppercase text-lg font-semibold">{t.name}</h1>
 
                 <p className="text-gray-700 dark:text-gray-300">{t.features}</p>
                 <button className="w-[60%] mx-auto bg-blue-500 text-white rounded-3xl px-4 py-2">
