@@ -79,9 +79,6 @@ export default function Review() {
                 />
                 <div className="ml-4">
                   <p className="text-xl font-semibold text-white">{t.name}</p>
-                  <h3 className="mt-1 font-medium text-sm text-white">
-                    {t.role}
-                  </h3>
                 </div>
               </div>
               <p className="text-neutral-400 flex-grow">{t.description}</p>
