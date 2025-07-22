@@ -14,7 +14,10 @@ const Footer = () => {
             <div className="lg:flex lg:items-center">
               <ul className="flex space-x-6">
                 <li>
-                  <a href="javascript:void(0)">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/profile.php?id=61578145907762&sfnsn=wa"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="fill-blue-600 w-8 h-8"
@@ -28,7 +31,10 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">
+                  <a
+                    target="_blank"
+                    href="http://linkedin.com/company/martspelltech"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-8 h-8"
@@ -50,7 +56,10 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/martspelltech"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-8 h-8"
