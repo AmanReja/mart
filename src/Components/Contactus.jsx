@@ -215,7 +215,7 @@ const Contactus = () => {
                 <div className="grow">
                   <h4 className="text-white font-semibold">Our address:</h4>
                   <address className="mt-1 text-neutral-400 text-sm not-italic">
-                    Chinnerpark,newtown
+                    Rajarhat, Kolkata, West Bengal near The Great Biryani Co.
                     <br />
                     rajarhat
                   </address>
