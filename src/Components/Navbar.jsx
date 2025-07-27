@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex w-full h-[71px] bg-transparent justify-between sm:justify-evenly items-center px-[20px] sticky top-[5px] z-50 ">
-        <h1 className="text-4xl">Martspell</h1>
+        <h1 className="text-4xl">Martspelltech</h1>
         <div
           className={`${
             open ? "flex w-full" : "hidden w-0"

@@ -18,7 +18,7 @@ const Banner = () => {
             style={{ fontFamily: "Montserrat", fontWeight: 500 }}
             className="text-[18px] text-white font-bold z-10"
           >
-            Welcome To <span className="text-orange-400">Mart Spell</span>
+            Welcome To <span className="text-orange-400">Mart Spelltech</span>
             <div className="bg-violet-500  w-[105px] h-[2px] mt-2"></div>
           </h1>
 
